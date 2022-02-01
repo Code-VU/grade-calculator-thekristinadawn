@@ -2,11 +2,11 @@ def calculateGrade():
     # Implement your solution in between the two comment blocks
     print("Calculating Grade")
     # This first line is provided for you
-
-    score = float(input("Enter score:"))
-    float_score=score
     try: 
-        if float_score < 0.0 or float_score> 1.0: 
+        score = float(input("Enter score:"))
+        float_score=score
+   
+        if 1.0 < float_score or float_score < 1.0: 
             print("Bad score")
         elif float_score >= 0.9:
             print("A")
@@ -19,7 +19,7 @@ def calculateGrade():
         elif float_score < 0.6:
             print("F")
     except:
-        print("Please enter a number 0.0 - 1.0")    
+        print("Bad score")   
 
     # end assignment
 
