@@ -6,7 +6,7 @@ def calculateGrade():
         score = float(input("Enter score:"))
         float_score=score
    
-        if 1.0 < float_score or float_score < 1.0: 
+        if 1.0 < float_score or float_score < 0.0: 
             print("Bad score")
         elif float_score >= 0.9:
             print("A")
